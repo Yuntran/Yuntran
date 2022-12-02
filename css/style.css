@@ -1,0 +1,73 @@
+.toolbar{
+    grid-area: toolbar;
+}
+.main{
+    grid-area: main;
+}
+.calendar{
+    grid-area: calendar;
+}
+body{
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 100%;
+    padding:25px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 3fr;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    "toolbar main calendar";
+    background-color: #f0f0f0;
+    color: rgb(10,20,110);
+}
+
+.main{
+    display: grid;
+    grid-template-columns:1fr;
+    grid-template-rows: 1fr 5fr 9fr;
+    grid-template-areas: 
+    "title"
+    "clock"
+    "content";
+}
+
+
+
+.header h1{
+    grid-area: title;
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(10,20,110);
+}
+
+.menu {
+    grid-area: clock;
+    max-width: 100%;
+}
+
+.content{
+    grid-area: content;
+    box-sizing: content-box;
+    max-width: 100%;
+    
+}
+
+.activity{
+    grid-area: activity;
+    box-sizing: border-box;
+    width: 60%;
+    height: 100%;
+    float: left;
+}
+
+.statistics{
+    grid-area: statistics;
+    box-sizing: border-box;
+    width: 40%;
+    height: 100%;
+    float: right;
+}
