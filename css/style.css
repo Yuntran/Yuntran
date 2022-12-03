@@ -7,12 +7,6 @@
 .calendar{
     grid-area: calendar;
 }
-body{
-    height: 100vh;
-}
-*{
-    box-sizing: border-box;
-}
 .container{
     height: 100%;
     padding:25px;
@@ -24,29 +18,37 @@ body{
     background-color: #f0f0f0;
     color: rgb(10,20,110);
 }
+body{
+    height: 100vh;
+}
+*{
+    box-sizing: border-box;
+}
 
 .main{
+    height: 100%;
+    max-width: 100%;
     display: grid;
-    grid-template-columns:1fr;
+    grid-template-columns:100%;
     grid-template-rows: 1fr 5fr 9fr;
     grid-template-areas: 
-    "title"
-    "clock"
+    "headertitle"
+    "worktimeclock"
     "content";
 }
 
-
-
-.header h1{
-    grid-area: title;
+.headertitle{
+    grid-area: headertitle;
+}
+.title{
     font-size: 24px;
     font-weight: bold;
     color: rgb(10,20,110);
 }
 
+
 .menu {
-    grid-area: clock;
-    max-width: 100%;
+    grid-area: worktimeclock;
 }
 
 .content{
@@ -65,7 +67,7 @@ body{
 }
 
 .statistics{
-    grid-area: statistics;
+    grid-area: statistic;
     box-sizing: border-box;
     width: 40%;
     height: 100%;

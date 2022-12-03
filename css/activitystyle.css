@@ -3,40 +3,40 @@
    grid-template-columns: 1fr;
    grid-template-rows: repeat(7,1fr);
    grid-template-areas: 
-   "title"
-   "act1"
-   "act2"
-   "act3"
-   "act4"
-   "act5"
-   "act6" ;
+   "recentactivity"
+   "activitydata1"
+   "activitydata2"
+   "activitydata3"
+   "activitydata4"
+   "activitydata5"
+   "activitydata6" ;
    font-size: 12px;
 }
-.act{
-    grid-area: title;
+.recentactivity{
+    grid-area: recentactivity;
     font-size: 20px;
     font-weight: bold;
 }
-.act1{
-    grid-area: act1;
+.activitydata1{
+    grid-area:activitydata1;
 }
-.act2{
-    grid-area: act2;
+.activitydata2{
+    grid-area:activitydata2;
 }
-.act3{
-    grid-area: act3;
+.activitydata3{
+    grid-area:activitydata3;
 }
-.act4{
-    grid-area: act4;
+.activitydata4{
+    grid-area:activitydata4;
 }
-.act5{
-    grid-area: act5;
+.activitydata5{
+    grid-area:activitydata5;
 }
-.act6{
-    grid-area: act6;
+.activitydata6{
+    grid-area:activitydata6;
 }
 
-#timebar{
+.timebar{
     border-radius: 10px;
     background-color: rgb(250,250,250);
     text-align: left;
@@ -50,8 +50,6 @@
     padding: 2px;
     font-size: 0.7em;
     text-align: center;
-
-
 }
 .out{
     color:#fff;
@@ -59,5 +57,4 @@
     font-size: 0.7em;
     text-align: center;
     padding: 2px;
-  
 }
