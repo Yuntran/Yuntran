@@ -2,10 +2,11 @@
     grid-area: statistic;
 }
 .statistic{
+    height: 80%;
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr repeat(3,2fr);
+    grid-template-rows: 30px repeat(3,2fr);
     gap: 10px 10px;
     grid-template-areas: 
     "title title"
@@ -16,7 +17,7 @@
 }
 .worktimestatistic{
     grid-area: title;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
 }
 .workday{
@@ -44,7 +45,7 @@
     padding: 15px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 30% 40% 30%;
+    grid-template-rows: 20% 60% 20%;
     grid-template-areas: 
     "timelabel"
     "count";
@@ -52,7 +53,7 @@
 .timelabel{
     grid-area: timelabel;
     text-align: left;
-    font-size: 14px;
+    font-size: 12px;
 }
 .count{
     grid-area: count;
