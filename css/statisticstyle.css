@@ -1,31 +1,32 @@
-.statistics{
+.statistic{
+    grid-area: statistic;
+}
+.statistic{
+    box-sizing: border-box;
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 15% repeat(3,20%);
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr repeat(3,2fr);
+    gap: 10px 10px;
     grid-template-areas: 
-    "worktimestatistic worktimestatistic"
-    "workdate holiday"
+    "title title"
+    "workday holiday"
     "worktime worktime"
     "overtime resttime";
-    justify-items: end;
-    grid-gap: 15px;
-    text-align: left;
-    font-size: 14px;
-    box-sizing: border-box;
-    width: 40%;
-    float: right;
 
 }
 .worktimestatistic{
-    grid-area: worktimestatistic;
-    font-size: 20px;
+    grid-area: title;
+    font-size: 18px;
     font-weight: bold;
 }
-.workdate{
-    grid-area: workdate;
+.workday{
+    grid-area: workday;
+    width: 110%;
 }
 .holiday{
     grid-area: holiday;
+    width: 90%;
+    justify-self: end;
 }
 .worktime{
     grid-area: worktime;
@@ -36,21 +37,32 @@
 .resttime{
     grid-area: resttime;
 }
-
 .timebox{
     border-radius: 10px;
     background-color: rgb(250,250,250);
     box-shadow: 1px 1px 5px 5px rgb(235, 235, 246) ;
-    text-align: left;
     padding: 15px;
-    margin: 5px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30% 40% 30%;
+    grid-template-areas: 
+    "timelabel"
+    "count";
+}
+.timelabel{
+    grid-area: timelabel;
+    text-align: left;
+    font-size: 14px;
 }
 .count{
+    grid-area: count;
+    place-items: center;
     font-size: 25px;
     font-weight: bold;
-    margin: auto;
+    margin-left: 10px;
 
 }
+
 .detail{
     border-radius: 2px;
     background-color: rgb(98, 98, 223);

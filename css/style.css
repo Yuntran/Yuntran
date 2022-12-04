@@ -1,3 +1,26 @@
+*{
+    box-sizing: border-box; 
+
+}
+body{
+    height: 100%;
+}
+
+.container{
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #f3f3f3;
+    color: rgb(10,20,110);
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 2fr 9fr 5fr;
+    grid-template-rows: 100%;
+    gap: 30px 39px;
+    grid-template-areas: 
+    "toolbar main calendar";
+   
+}
 .toolbar{
     grid-area: toolbar;
 }
@@ -7,69 +30,48 @@
 .calendar{
     grid-area: calendar;
 }
-.container{
-    height: 100%;
-    padding:25px;
-    display: grid;
-    grid-template-columns: 1fr 5fr 3fr;
-    grid-template-rows: 100%;
-    grid-template-areas: 
-    "toolbar main calendar";
-    background-color: #f0f0f0;
-    color: rgb(10,20,110);
-}
-body{
-    height: 100vh;
-}
-*{
-    box-sizing: border-box;
-}
-
 .main{
-    height: 100%;
-    max-width: 100%;
     display: grid;
-    grid-template-columns:100%;
-    grid-template-rows: 1fr 5fr 9fr;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 4fr;
+    gap: 20px 20px;
     grid-template-areas: 
-    "headertitle"
-    "worktimeclock"
+    "title"
+    "menu"
     "content";
 }
-
-.headertitle{
-    grid-area: headertitle;
-}
-.title{
-    font-size: 24px;
+.header{
+    grid-area: title;
+    display: grid;
+    align-items: end;
+    font-size: 25px;
     font-weight: bold;
-    color: rgb(10,20,110);
+    text-align: left;
+    padding: 15px;
+
 }
-
-
-.menu {
-    grid-area: worktimeclock;
+.menu{
+    grid-area: menu;
 }
-
 .content{
     grid-area: content;
-    box-sizing: content-box;
-    max-width: 100%;
-    
+}
+.menu{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100%;
+    gap: 20px 30px;
+    grid-template-areas: 
+    "checkinlock checkoutclock overtimeclock dayoffclock";
+}
+.content{
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 90%;
+    gap: 0px 30px;
+    grid-template-areas: 
+    "activity statistic";
 }
 
-.activity{
-    grid-area: activity;
-    box-sizing: border-box;
-    width: 60%;
-    height: 100%;
-    float: left;
-}
-
-.statistics{
-    grid-area: statistic;
-    box-sizing: border-box;
-    width: 40%;
-    height: 100%;
-    float: right;
-}

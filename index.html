@@ -1,80 +1,107 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width" >
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/menustyle.css">
-    <link rel="stylesheet" href="css/activitystyle.css">
-    <link rel="stylesheet" href="css/statisticsstyle.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width" >
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/menustyle.css">
+        <link rel="stylesheet" href="css/activitystyle.css">
+        <link rel="stylesheet" href="css/statisticstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="toolbar"></div>
+            <div class="main">
+                <div class="header">
+                    <div class="header-title">こんにちは！</div>
+                </div>
+                <div class="menu">
+                    <div class="checkin clock">
+                        <p class="clockname">出勤</p>
+                        <img class="clockimage" src="img/checkinclock.svg" alt="checkin clock" >
+                        <img class="colorcircle" src="img/bluedot.svg" alt="blue dot">
+                    </div>
+                    <div class="checkout clock">
+                        <p class="clockname">退勤</p>
+                        <img class="clockimage" src="img/checkoutclock.svg" alt="checkout clock">
+                        <img class="colorcircle" src="img/reddot.svg" alt="red dot">
+                    </div>
+                    <div class="overtime clock">
+                        <p class="clockname">残業</p>
+                        <img class="clockimage" src="img/overtimeclock.svg" alt="overtime clock">
+                        <img class="colorcircle" src="img/greendot.svg" alt="green dot">
+                    </div>
+                    <div class="dayoff clock">
+                        <p class="clockname">休暇</p>
+                        <img class="clockimage" src="img/dayoffclock.svg" alt="dayoff clock">
+                        <img class="colorcircle" src="img/purpledot.svg" alt="purple dot">
+                    </div>
     
-</head>
+                </div>
+                <div class="content">
+                    <div class="activity">
+                        <div class="recent-activity">最近の活動</div>
+                        <div class="last-activity activity-row">
+                            <div class="check-date">2022年10月20日 (木)</div>
+                            <div class="check-time"> 18時44分30秒</div>
+                            <div class="in-out out">退勤</div>
+                        </div>
+                        <div class="next1-activity activity-row">
+                            <div class="check-date">2022年10月20日 (木)</div>
+                            <div class="check-time"> 9時25分30秒</div>
+                            <div class="in-out in">出勤</div>
+                        </div>
+                        <div class="next2-activity activity-row">
+                            <div class="check-date">2022年10月19日 (水)</div>
+                            <div class="check-time"> 19時00分22秒</div>
+                            <div class="in-out out">退勤</div>
+                        </div>
+                        <div class="next3-activity activity-row">
+                            <div class="check-date">2022年10月19日 (水)</div>
+                            <div class="check-time">9時25分30秒</div>
+                            <div class="in-out in">出勤</div>
+                        </div>
+                        <div class="netx4-activity activity-row">
+                            <div class="check-date">2022年10月18日 (火)</div>
+                            <div class="check-time">19時00分22秒</div>
+                            <div class="in-out out">退勤</div>
+                        </div>
+                        <div class="next5-activity activity-row">
+                            <div class="check-date">2022年10月18日 (火)</div>
+                            <div class="check-time">9時25分30秒</div>
+                            <div class="in-out in">出勤</div>
+                        </div>
 
-<body>
-    <div class="container">
-        <div class="toolbar">aa</div>
-        <div class="main">
-            <div class="headertitle">
-                <h1 class="title">ゆんがんばって！</h1>
+
+                    </div>
+                    <div class="statistic">
+                        <div class="worktimestatistic">出勤時間</div>
+                        <div class="workday timebox">
+                            <div class="timelabel">出勤日</div>
+                            <div class="count">14日</div>
+                        </div>
+                        <div class="holiday timebox">
+                            <div class="timelabel">土日祝</div>
+                            <div class="count">6日</div>
+                        </div>
+                        <div class="worktime timebox">
+                            <div class="timelabel">出勤時間<span class="detail">詳細</span></div>
+                            <div class="count">102時30分</div>
+                        </div>
+                        <div class="overtime-analysis timebox">
+                            <div class="timelabel">残業時間</div>
+                            <div class="count">10時</div>
+                        </div>
+                        <div class="resttime timebox">
+                            <div class="timelabel">休憩時間</div>
+                            <div class="count">15時</div>
+                        </div>
+    
+                    </div>
+                </div>
             </div>
-            <div class="menu">
-                <div class="checkin clock">
-                    <p>出勤</p>
-                    <img src="img/checkinclock.svg" alt="checkin clock">
-                    <img src="img/bluedot.svg" alt="blue dot">
-                </div>
-                <div class="checkout clock">
-                    <p>退勤</p>
-                    <img src="img/checkoutclock.svg" alt="checkout clock">
-                    <img src="img/reddot.svg" alt="red dot">
-                </div>
-                <div class="overtime clock">
-                    <p>残業</p>
-                    <img src="img/overtimeclock.svg" alt="overtime clock">
-                    <img src="img/greendot.svg" alt="green dot">
-                </div>
-                <div class="dayoff clock">
-                    <p>休暇</p>
-                    <img src="img/dayoffclock.svg" alt="dayoff clock">
-                    <img src="img/purpledot.svg" alt="purple dot">
-                </div>
-            </div>
-            <div class="content">
-                <div class="activity">
-                    <div class="recentactivity">最近の活動</div>
-                    <div class="activitydata1 timebar">
-                        <label for="checktime1">2022年10月20日木11時22分55秒<span class="in">出勤</span></label>
-                    </div>
-                    <div class="activitydata2 timebar">
-                        <label for="checktime2">2022年10月20日木11時22分55秒<span class="out">出勤</span></label>
-                    </div>
-                    <div class="activityadata3 timebar">
-                        <label for="checktime3">2022年10月20日木11時22分55秒<span class="in">出勤</span></label>
-                    </div>
-                    <div class="activitydata4 timebar">
-                        <label for="checktime4">2022年10月20日木11時22分55秒<span class="out">出勤</span></label>
-                    </div>
-                    <div class="activitydata5 timebar">
-                        <label for="checktime5">2022年10月20日木11時22分55秒<span class="in">出勤</span></label>
-                    </div>
-                    <div class="activitydata6 timebar">
-                        <label for="checktime6">2022年10月20日木11時22分55秒<span class="out">出勤</span></label>
-                    </div>
-                </div>
-                <div class="statistics">
-                    <div class="worktimestatistic">出勤時間</div>
-                    <div class="workdate timebox">出勤日</div>
-                    <div class="holiday timebox">土日祝</div>
-                    <div class="worktime timebox">出勤時間</div>
-                    <div class="overtime timebox">残業時間</div>
-                    <div class="resttime timebox">休憩時間</div>
-                </div>    
-            </div>
+            <div class="calendar"></div>
         </div>
-        <div class="calendar">cc</div>
-    </div>
-
-</body>
-
+        
+    </body>
 </html>
