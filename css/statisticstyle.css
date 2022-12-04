@@ -2,12 +2,13 @@
     grid-area: statistic;
 }
 .statistic{
-    height: 80%;
+    height: 95%;
     box-sizing: border-box;
+    align-content: start;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 30px repeat(3,2fr);
-    gap: 10px 10px;
+    gap: 10px 20px;
     grid-template-areas: 
     "title title"
     "workday holiday"
@@ -31,6 +32,8 @@
 }
 .worktime{
     grid-area: worktime;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .overtime-analysis{
     grid-area: overtime;
@@ -45,7 +48,7 @@
     padding: 15px;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 20% 60% 20%;
+    grid-template-rows: 20% 80%;
     grid-template-areas: 
     "timelabel"
     "count";
@@ -57,7 +60,7 @@
 }
 .count{
     grid-area: count;
-    place-items: center;
+    display: grid;
     font-size: 25px;
     font-weight: bold;
     margin-left: 10px;
