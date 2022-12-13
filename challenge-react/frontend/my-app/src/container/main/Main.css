@@ -1,0 +1,10 @@
+.main{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 4fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+    "title"
+    "menu"
+    "content";
+  }

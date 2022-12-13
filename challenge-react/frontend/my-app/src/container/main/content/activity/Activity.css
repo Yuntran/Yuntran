@@ -1,0 +1,88 @@
+.activity{
+    grid-area: activity;
+}
+.activity{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px repeat(6,2fr);
+    gap: 10px 25px;
+    grid-template-areas: 
+    "title"
+    "last-activity"
+    "next1-activity"
+    "next2-activity"
+    "next3-activity"
+    "next4-activity"
+    "next5-activity"
+   ;
+}
+.recent-activity{
+    grid-area: title;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+.last-acitivity{
+    grid-area: last-activity;
+}
+.next1-activity{
+    grid-area: next1-activity;
+}
+.next2-activity{
+    grid-area: next2-activity;
+}
+.next3-activity{
+    grid-area: next3-activity;
+}
+.next4-activity{
+    grid-area: next4-activity;
+}
+.next5-activity{
+    grid-area: next5-activity;
+}
+
+
+.activity-row{
+    border-radius: 10px;
+    background-color: rgb(250,250,250);
+    box-shadow: 1px 1px 5px 5px rgb(235, 235, 246) ;
+    font-size: 12px;
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 100%;
+    gap: 10px 10px;
+    place-items: center;
+    grid-template-areas: 
+    "check-date check-time in-out";
+
+}
+.check-date{
+    grid-area: check-date;
+}
+.check-time{
+    grid-area: check-time;
+}
+.in-out{
+    grid-area: in-out;
+}
+.out{
+    color: #fff;
+    background-color:#cd1515;
+    width: 35px;
+    padding: 2px;
+    font-size: 7px;
+    text-align: center;
+    float: right;
+    border-radius: 2px;
+}
+.in{
+    color:#fff;
+    background-color:rgb(85, 85, 213);
+    width: 35px;
+    font-size: 7px;
+    text-align: center;
+    padding: 2px;
+    float: right;
+    border-radius: 2px;
+}
