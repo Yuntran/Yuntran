@@ -8,12 +8,9 @@ class Menu extends React.Component {
         }
     
 Menu = ('checkin','checkout','overtime','dayoff');
-
 render() {
         return (
             <div>
-                {this.Menu()}
-                <button onClick='fn()'></button>
             </div>
         )
     }

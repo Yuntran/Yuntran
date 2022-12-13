@@ -1,7 +1,7 @@
 import './Content.css';
 import React from 'react';
-import Activity from './Activity';
-import Statistic from './Statistic';
+import Activity from './activity/Activity';
+import Statistic from './statistic/Statistic';
 
 class Content extends React.Component {
     constructor(props) {

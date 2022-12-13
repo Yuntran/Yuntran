@@ -4,6 +4,7 @@ import React from 'react';
 class Statistic extends React.Component {
     constructor(props) {
         console.log('constructor')
+        super(props)
     }
 
     render () {
@@ -15,6 +16,7 @@ class Statistic extends React.Component {
     }
 }
 
+export default Statistic;
 
 
 

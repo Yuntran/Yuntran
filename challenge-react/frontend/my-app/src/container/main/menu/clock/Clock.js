@@ -12,17 +12,19 @@ Clock() => {
     Clock.clockName =''
     Clock.clockImage =''
     Clock.Colorcircle ='';
-
+}
  render () {
     return (
-        <div>
-        </div> className Clock ="checkin";
-             </div>
+        <div className = Clock>
+          <div className Clock ="checkin">;
+          <p className="clockname">出勤</p>;
+          <img className="clockimage" src="img/checkinclock.svg" alt="checkin clock">;
+          <img className="colorcircle" src="img/reddot.svg" alt="red dot">;
+          </div>;
+
+         </div>
     )
  }
-
-}
-}
 }
 // function Clock(props) {
 //     return (

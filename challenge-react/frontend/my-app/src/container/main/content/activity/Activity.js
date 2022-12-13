@@ -1,6 +1,6 @@
 import './Activity.css';
 import React from 'react';
-import Activity from './Activity';
+
 class Activity extends React.Component {
     constructor(props) {
         console.log('constructor')
