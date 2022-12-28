@@ -1,0 +1,44 @@
+.container{
+    box-sizing: border-box;
+    height: 100%;
+    justify-content: center;
+    align-content: center;
+    display: grid;
+    grid-template-columns: 2fr 9fr 5fr;
+    grid-template-rows: 100%;
+    gap: 30px 30px;
+    grid-template-areas: 
+    "'toolbar' 'main' 'calendar'";
+   
+  }
+  .toolbar{
+    grid-area: toolbar;
+  }
+  .main{
+    grid-area: main;
+  }
+  .calendar{
+    grid-area: calendar;
+  }
+  .menu{
+    grid-area: menu;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 100%;
+    gap: 20px 20px;
+    grid-template-areas: 
+    "'checkinlock' 'checkoutclock' 'overtimeclock' 'dayoffclock'";
+  }
+  .content{
+    grid-area: content;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 100%;
+    gap: 0px 30px;
+    grid-template-areas: 
+    "activity statistic";
+  }
+  
+  

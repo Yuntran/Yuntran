@@ -1,9 +1,7 @@
 *{
   box-sizing: border-box; 
 }
-
-
-html, body {
+ body {
   height: 100%;
 }
 body{
@@ -12,54 +10,5 @@ body{
   padding: 20px;
   background-color: #f3f3f3;
   color: rgb(10,20,110);
-}
-
-.container{
-  box-sizing: border-box;
-  height: 100%;
-  justify-content: center;
-  align-content: center;
-  display: grid;
-  grid-template-columns: 2fr 9fr 5fr;
-  grid-template-rows: 100%;
-  gap: 30px 30px;
-  grid-template-areas: 
-  "toolbar main calendar";
- 
-}
-.toolbar{
-  grid-area: toolbar;
-}
-.main{
-  grid-area: main;
-}
-.calendar{
-  grid-area: calendar;
-}
-
-
-.menu{
-  grid-area: menu;
-}
-.content{
-  grid-area: content;
-}
-.menu{
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(4,1fr);
-  grid-template-rows: 100%;
-  gap: 20px 20px;
-  grid-template-areas: 
-  "checkinlock checkoutclock overtimeclock dayoffclock";
-}
-.content{
-  box-sizing: border-box;
-  display:grid;
-  grid-template-columns: 3fr 2fr;
-  grid-template-rows: 100%;
-  gap: 0px 30px;
-  grid-template-areas: 
-  "activity statistic";
 }
 
