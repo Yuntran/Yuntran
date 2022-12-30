@@ -15,15 +15,15 @@ class Menu extends React.Component {
     constructor(props) {
         super(props)
     }
-    
+
 //data muon truyen vao clock
 render() {
         return (
-           <div className="clock">
-            <Clock className={"checkinclock"} clockName="出勤" clockImage={checkinclock} clockStatus={bluedot}/>
-            <Clock className={"checkoutclock"} clockName="退勤" clockImage={checkoutclock} clockStatus={reddot}/>            <Clock clockName="出勤" clockImage={checkinclock} clockStatus={bluedot}/>
-            <Clock className={"overtimeclock"} clockName="残業" clockImage={overtimeclock} clockStatus={greendot}/>
-            <Clock className={"dayoffclock"} clockName="休暇" clockImage={dayoffclock} clockStatus={purpledot}/>
+           <div className={this.props.menu}>
+            <Clock clock={"checkinclock clock"} clockName="出勤" clockImage={checkinclock} clockStatus={bluedot}/>
+            <Clock clock={"checkoutclock clock"} clockName="退勤" clockImage={checkoutclock} clockStatus={reddot}/>           
+            <Clock clock={"overtimeclock clock"} clockName="残業" clockImage={overtimeclock} clockStatus={greendot}/>
+            <Clock clock={"dayoffclock clock"} clockName="休暇" clockImage={dayoffclock} clockStatus={purpledot}/>
 
            </div> 
              )

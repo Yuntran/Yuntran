@@ -11,10 +11,10 @@ class Main extends React.Component {
 
 render() {
     return (
-      <div>
-        <Header userName={'Yun'} lastName={'Tran'}/>
-        <Menu/>
-        <Content/>
+      <div className={this.props.className}>
+        <Header className="header" userName={'Yun'} lastName={'Tran'}/>
+        <Menu menu="menu"/>
+        <Content className="content" />
       </div>
     )
   }

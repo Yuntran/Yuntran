@@ -9,9 +9,12 @@ class Activity extends React.Component {
 
 render () {
     return (
-        <div>
-            
-        </div>
+        
+        <div className={this.props.checkInfo}>
+        {this.props.checkInfo.checkDate},
+        {this.props.checkInfo.checkTime},
+        {this.props.checkInfo.inOut}</div>
+        
         )
     }   
 }

@@ -14,7 +14,7 @@ render() {
     return (
     
       <div>
-        <Container/>
+        <Container className={'container'}/>
       </div>
     )
   }

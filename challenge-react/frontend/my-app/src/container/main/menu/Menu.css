@@ -10,3 +10,13 @@
 .dayoffclock{
     grid-area: dayoffclock;
 }
+.menu{
+    grid-area: menu;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
+    gap: 20px 20px;
+    grid-template-areas: 
+    "checkinclock checkoutclock overtimeclock dayoffclock";
+  }

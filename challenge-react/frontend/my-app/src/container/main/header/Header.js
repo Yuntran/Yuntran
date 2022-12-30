@@ -32,7 +32,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className='header'>
+      <div className={this.props.className}>
         {this.state.greetingMessage},{this.props.lastName} {this.props.userName}
         </div>
     )

@@ -1,7 +1,7 @@
 .main{
     display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 1fr 2fr 4fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 20% 40%;
     gap: 20px 20px;
     grid-template-areas: 
     "title"

@@ -7,7 +7,7 @@ class Clock extends React.Component {
    }
     render() {
         return ( 
-             <div className={this.props.className}>
+             <div className={this.props.clock}>
                 <img src={this.props.clockImage} />
                 <img src={this.props.clockStatus} />
                 <p>{this.props.clockName}</p>

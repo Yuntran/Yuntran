@@ -1,0 +1,11 @@
+.content{
+    grid-area: content;
+    box-sizing: border-box;
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    grid-template-rows: 1fr;
+    gap: 0px 30px;
+    grid-template-areas: 
+    "activity statistic";
+  }
+  
