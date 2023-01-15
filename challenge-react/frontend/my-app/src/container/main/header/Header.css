@@ -1,9 +1,0 @@
-.header{
-    grid-area: title;
-    display: grid;
-    align-items: end;
-    font-size: 25px;
-    font-weight: bold;
-    text-align: left;
-    padding: 15px;
-  }
